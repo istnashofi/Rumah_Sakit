@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Testimonial — Sehat Sentosa</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="testimonial">
+    <a class="skip-link" href="#main">Lewati ke konten</a>
+    <!-- header  -->
+    <header class="site-header" role="banner">
+      <div class="container nav">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Rumah Sakit Sehat Sentosa"
+        >
+          <span class="brand-mark" aria-hidden="true">RS</span>
+          <span class="brand-name">KELOMPOK 4</span>
+        </a>
+        <nav class="main-nav" aria-label="Menu utama">
+          <button
+            class="login-btn"
+            data-login-open
+            aria-haspopup="dialog"
+            aria-controls="loginModal"
+          >
+            Login
+          </button>
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="testimonial.html">Testimonial</a></li>
+            <li><a href="team.html">Anggota Kelompok</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="main container">
+      <h1>Testimonial Pasien</h1>
+      <div class="grid-3">
+        <blockquote class="quote">
+          <p>
+            Pelayanan cepat dan ramah. Rasa sakit saya tertangani dengan baik.
+          </p>
+          <footer>— Andi, Jakarta</footer>
+        </blockquote>
+        <blockquote class="quote">
+          <p>Dokternya komunikatif, penjelasannya jelas dan menenangkan.</p>
+          <footer>— Siti, Depok</footer>
+        </blockquote>
+        <blockquote class="quote">
+          <p>Fasilitasnya modern, proses administrasi juga efisien.</p>
+          <footer>— Budi, Bekasi</footer>
+        </blockquote>
+      </div>
+    </main>
+
+    <!-- footer + modal + top  -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand-inline">
+            <span class="brand-mark" aria-hidden="true">RS</span>
+            <span class="brand-name">KELOMPOK 4</span>
+          </div>
+          <p class="muted">Jl. Indonesia No. 123, Indonesia</p>
+        </div>
+        <div>
+          <h4>Ikuti Kami</h4>
+          <ul class="socials">
+            <li><a href="https://www.instagram.com/itsnupekalongan/" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontak</h4>
+          <ul class="muted no-bullets">
+            <li>Telp: (021) 555-1234</li>
+            <li>Email: info@kelompok_4.id</li>
+          </ul>
+        </div>
+      </div>
+      <p class="tiny muted text-center">© 2025 Kelompok 4</p>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+      ↑
+    </button>
+
+    <div
+      class="modal"
+      id="loginModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="loginTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-backdrop" data-login-close></div>
+      <div class="modal-content" role="document">
+        <button class="modal-close" data-login-close aria-label="Tutup">
+          ✕
+        </button>
+        <h2 id="loginTitle">Login Pasien</h2>
+        <form class="form">
+          <label>Email<input type="email" required /></label>
+          <label
+            >Password<input type="password" required minlength="6"
+          /></label>
+          <button type="submit" class="btn btn-primary">Masuk</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Website Kelompok 4</title>
+    <meta name="description" content="Landing page rumah sakit dengan layanan terbaik." />
+     <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main">Lewati ke konten</a>
+
+    <header class="site-header" role="banner">
+      <div class="container nav">
+        <a class="brand" href="index.html" aria-label="Rumah Sakit Sehat Sentosa">
+          <span class="brand-mark" aria-hidden="true">RS</span>
+          <span class="brand-name">KELOMPOK 4</span>
+        </a>
+        <nav class="main-nav" aria-label="Menu utama">
+          <button class="login-btn" data-login-open aria-haspopup="dialog" aria-controls="loginModal">Login</button>
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="testimonial.html">Testimonial</a></li>
+            <li><a href="team.html">Anggota Kelompok</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="main">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1 class="title">Perawatan Terbaik, Sepenuh Hati</h1>
+            <p class="lead">Rumah sakit modern dengan tenaga medis profesional, layanan 24 jam, dan teknologi terkini.</p>
+            <div class="cta">
+              <a class="btn btn-primary" href="contact.html">Buat Janji</a>
+              <button class="btn btn-ghost" data-login-open>Login Pasien</button>
+            </div>
+          </div>
+
+          
+          <div class="carousel" data-carousel>
+            <div class="carousel-viewport" role="region" aria-label="Galeri layanan kami">
+              <ul class="carousel-track">
+                <li class="carousel-slide is-active">
+                  <img alt="Ruang perawatan yang bersih dan nyaman" src="image/5.jpg" />
+                </li>
+                <li class="carousel-slide">
+                  <img alt="Dokter memeriksa pasien dengan ramah" src="image/3.jpg" />
+                </li>
+                <li class="carousel-slide">
+                  <img alt="Peralatan medis modern di ruang diagnostik" src="image/4.jpg" />
+                </li>
+              </ul>
+              <button class="carousel-btn prev" data-carousel-prev aria-label="Sebelumnya">‹</button>
+              <button class="carousel-btn next" data-carousel-next aria-label="Berikutnya">›</button>
+            </div>
+            <div class="carousel-dots" role="tablist" aria-label="Pilih slide"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container grid-3">
+          <article class="card">
+            <h3>IGD 24 Jam</h3>
+            <p>Penanganan cepat untuk kondisi darurat dengan dokter jaga setiap saat.</p>
+          </article>
+          <article class="card">
+            <h3>Rawat Jalan</h3>
+            <p>Konsultasi dengan dokter spesialis berbagai bidang, mudah dan cepat.</p>
+          </article>
+          <article class="card">
+            <h3>Farmasi</h3>
+            <p>Obat terjamin keasliannya dengan pelayanan ramah dan informatif.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand-inline">
+            <span class="brand-mark" aria-hidden="true">RS</span>
+            <span class="brand-name">KELOMPOK 4</span>
+          </div>
+          <p class="muted">Jl. Indonesia No. 123, Indonesia</p>
+        </div>
+        <div>
+          <h4>Ikuti Kami</h4>
+          <ul class="socials">
+            <li><a href="https://www.instagram.com/itsnupekalongan/" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontak</h4>
+          <ul class="muted no-bullets">
+            <li>Telp: (021) 555-1234</li>
+            <li>Email: info@kelompok_4.id</li>
+          </ul>
+        </div>
+      </div>
+      <p class="tiny muted text-center">© 2025 Kelompok 4</p>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">↑</button>
+
+    <div class="modal" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginTitle" aria-hidden="true">
+      <div class="modal-backdrop" data-login-close></div>
+      <div class="modal-content" role="document">
+        <button class="modal-close" data-login-close aria-label="Tutup">✕</button>
+        <h2 id="loginTitle">Login Pasien</h2>
+        <form class="form" autocomplete="on">
+          <label>
+            Email
+            <input type="email" name="email" required placeholder="nama@contoh.id" />
+          </label>
+          <label>
+            Password
+            <input type="password" name="password" required minlength="6" placeholder="••••••" />
+          </label>
+          <button type="submit" class="btn btn-primary">Masuk</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
